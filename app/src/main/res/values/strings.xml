@@ -1,0 +1,25 @@
+<resources>
+    <!-- Welcome -->
+    <string name="app_name">Tip Calculator</string>
+    <string name="edit_bill">Enter Bill</string>
+    <string name="edit_tip">Tip</string>
+    <string name="edit_num_people">Number of People</string>
+    <string name="button_calculate">Calculate</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- Settings -->
+    <string name="title_activity_settings">Settings</string>
+    <string name="pref_header_general">General</string>
+    <string name="pref_default_tip">Default Tip</string>
+    <string name="pref_currency">Currency</string>
+    <string-array name="pref_currency_list">
+        <item>Dollar</item>
+        <item>Euro</item>
+        <item>Pound</item>
+    </string-array>
+    <string-array name="pref_currency_list_values">
+        <item>$</item>
+        <item>‎€</item>
+        <item>£</item>
+    </string-array>
+</resources>
