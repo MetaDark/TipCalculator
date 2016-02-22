@@ -181,6 +181,9 @@ public class MainActivity extends AppCompatActivity {
 
         TextView total = (TextView) findViewById(R.id.total);
         total.setText(currency + "0.00");
+
+        TextView tipTotal = (TextView) findViewById(R.id.tip_total);
+        tipTotal.setText(currency + "0.00");
     }
 
     @Override
@@ -229,16 +232,23 @@ public class MainActivity extends AppCompatActivity {
             numPeople = 1;
         }
 
-        double total = bill * (1.0 + tip / 100);
+        double tipTotal = (tip / 100) * bill;
+        double total = bill + tipTotal;
 
-        TextView textTotal = (TextView) this.findViewById(R.id.total);
+        TextView textTotal = (TextView) findViewById(R.id.total);
         textTotal.setText(String.format("%s%.2f", currency, total));
 
-        TextView totalSplit = (TextView) this.findViewById(R.id.total_split);
+        TextView textTipTotal = (TextView) findViewById(R.id.tip_total);
+        textTipTotal.setText(String.format("%s%.2f", currency, tipTotal));
+
+        TextView totalSplit = (TextView) findViewById(R.id.total_split);
+        TextView tipTotalSplit = (TextView) findViewById(R.id.tip_total_split);
         if (numPeople > 1) {
             totalSplit.setText(String.format("%s%.2f each", currency, total / numPeople));
+            tipTotalSplit.setText(String.format("%s%.2f each", currency, tipTotal / numPeople));
         } else {
             totalSplit.setText("");
+            tipTotalSplit.setText("");
         }
     }
 

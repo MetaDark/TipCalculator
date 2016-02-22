@@ -115,27 +115,72 @@
         android:layout_width="fill_parent"
         android:layout_height="20dp" />
 
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Total"
-        android:layout_gravity="center_horizontal" />
+        android:orientation="horizontal">
 
-    <TextView
-        android:id="@+id/total"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="@dimen/large_text"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:layout_gravity="center_horizontal" />
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/total_split"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textColor="#80000000"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:layout_gravity="center_horizontal" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Tip"
+                android:layout_gravity="center_horizontal" />
 
+            <TextView
+                android:id="@+id/tip_total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/large_text"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:id="@+id/tip_total_split"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#80000000"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_gravity="center_horizontal" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Total"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:id="@+id/total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/large_text"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:id="@+id/total_split"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#80000000"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_gravity="center_horizontal" />
+
+        </LinearLayout>
+
+    </LinearLayout>
 </LinearLayout>

@@ -2,7 +2,7 @@
     <!-- Welcome -->
     <string name="app_name">Tip Calculator</string>
     <string name="edit_bill">Enter Bill</string>
-    <string name="edit_tip">Tip</string>
+    <string name="edit_tip">Tip Percentage</string>
     <string name="edit_num_people">Number of People</string>
     <string name="button_calculate">Calculate</string>
     <string name="action_settings">Settings</string>
